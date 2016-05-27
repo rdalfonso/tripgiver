@@ -1,0 +1,92 @@
+
+@import "common.less";
+
+	/* header */
+	#header 
+	{  
+		width: @baseWidth; 
+		height: 110px; 
+		background:@baseBlue; border-bottom:1px solid #cccccc; 
+		
+		.hdr_logo	 {  margin-left: 60px; padding: 25px 0 0 0px; float: @baseFloat; }
+		.hdr_item	 {  margin-left: 60px; padding: 50px 0 0 0px; float: @baseFloat; }
+	}
+
+	#content-profile-header 
+	{ 
+		width: 935px; height:auto;  margin-left: 85px; margin-top: 30px; 
+		.profile_content
+		{   
+			width: 970px; margin-bottom: 30px;	
+			
+			.profile_image    {   float: @baseFloat; border:1px solid #cccccc; position:relative; margin-right: 10px;  }
+			.profile_header   {   float: @baseFloat; font-size: @baseFontSize+20; letter-spacing:2px;  }
+			.profile_info     {   float: @baseFloat; font-size: @baseFontSize+4;   }
+			.profile_desc     {   float: @baseFloat; font-size: @baseFontSize+2; width: 570px; margin-right: 30px;   }
+			.profile_icons    {   float: @baseFloat; position: relative; bottom: 0; left: 0;   }
+		}
+	}
+	
+	
+	
+	#content-trips 							
+	{ 
+		width: 935px; height:auto; margin-left: 85px;
+		
+		.profile_trip 				{ width: 640px; height:auto; margin-top: 30px; }
+		.profile_trip_thumb 		{ float: @baseFloat; border:1px solid #cccccc; margin-right: 10px; position:relative; }
+		.profile_trip_header 		{ float: @baseFloat; position:relative; font-size: @baseFontSize+6; color: #75B4FD;   }
+		.profile_trip_desc 			{ float: @baseFloat; position:relative; font-size: @baseFontSize; margin-left: 95px; padding: 2px 0 0 2px; }
+		.profile_trip_desc span 	{ font-size: 11px;    }
+		
+		.box {
+			width: 80px; height: 50px; 
+			padding: 1px 1px 1px 1px; 
+			.box-shadow(2px, #888);	
+			border-radius: 1px 1px 1px 1px;
+			float: @baseFloat; 
+			position:relative;
+			left:-10px;
+			bottom:0px;
+			text-align: center;
+			margin-right: 15px;
+		}
+		
+		.funders_inline
+		{
+			width: 220px;
+			height: auto;		
+			position: absolute; /*ie6 */
+			bottom: 10px;
+			left:790px;
+		}
+		.funded_percent 		{ background:#72B4FF; }
+		.funded_complete 		{ background:#cccccc; }
+		.funded_percentage 		{ font-size: @baseFontSize+4; color: #FFFFFF; }
+		.funded_text	   		{ font-size: @baseFontSize - 2px; color: #FFFFFF; text-shadow: 5px 5px 5px #cccccc; }
+		.funded_arrow	   img 	{ opacity:1.4; filter:alpha(opacity=40); margin-top: 20px; margin-left: 55px;  }
+		
+		.content-trip-funders
+		{
+			background:#ffffff;
+			width: 210px;
+			height: auto;		
+			/*position:fixed !important;*/
+			position: absolute; /*ie6 */
+			padding: 10px 10px 10px 10px; 
+			bottom: 260px;
+			left:690px;
+			margin-left: 70px;
+			text-align:center; 
+			
+			.trip-funders-header 	   { 	text-align: @baseFloat; font-size: @baseFontSize+6; padding: 5px 5px 5px 5px;		}
+			.trip-funders-message	   { 	text-align: @baseFloat; font-size: @baseFontSize; padding: 5px 5px 5px 5px;		}
+			img 	    {  width:225; padding: 10px 10px 10px 10px; border: #000000 1px solid; border-style: dashed; margin-top:10px;	}
+		}
+		
+	}
+	
+
+
+
+	

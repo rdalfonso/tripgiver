@@ -1,0 +1,1 @@
+$(function () { window.onerror = function () { alert("Error! Please check your console/try again."); }; });

@@ -1,0 +1,186 @@
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+a {
+  outline: none;
+}
+:-moz-any-link:focus {
+  outline: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Page styles
+   ========================================================================== */
+   
+/************* VARIABLES *************/
+
+@baseFontSize: 12px;
+@baseFontFamily: Myriad Pro;
+@baseFontColor: black;
+@baseBlue: #DDECF3;
+@baseWidth: 1000px;
+@baseContainerWidth: 912px;
+@baseMarginWidth: 50px;
+@baseMarginHeight: 110px;
+@baseFloat: left; 
+  
+/************* Common methods *************/
+
+.box-shadow(@shadow: 1px, @color: #ccc) {
+	border-radius:5px;		
+	-moz-border-radius:25px; 
+   -moz-box-shadow: @shadow @shadow @shadow @color;
+   -webkit-box-shadow: @shadow @shadow @shadow @color;
+	box-shadow: @shadow @shadow @shadow @color;
+}
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+/************* classes *************/
+
+.clear 		{ clear: both;	overflow: hidden; font-size: 1px; height: 0px;	}
+
+.searchBox
+{
+	border:1px solid #cccccc;
+	background:#ffffff;
+	width:250px;
+	height:25px;
+	.box-shadow(1px, #ccc);
+}
+
+.commentBox
+{
+	border:1px solid #cccccc;
+	background:#ffffff;
+	width:600px;
+	height:100px;
+	border-radius:5px;		
+	.box-shadow(1px, #ccc);	
+}
+	
+ul  {	list-style:none; float:@baseFloat; }
+li  {	width:110px; float:@baseFloat; }
+div { 	font-family: @baseFontFamily; color: @baseFontColor;  }		
+
+html, body {		
+	color: #555555;
+	width: 100%;
+	/*height: 100%;*/
+	margin: 0px;
+	padding: 0px;
+	/*overflow-x: hidden; */
+	background: #ffffff;
+}
+
+.tab {
+	height:110px; 
+	width: 912px; 
+	position: absolute; 
+	
+	a#home-nav
+	{
+		width: 180px;
+	}
+}
+
+#footer 	
+{	
+		margin-left: 30px; margin-top: 40px; float: @baseFloat; 	
+		.content-footer  {  margin-left: 30px; float: @baseFloat; background:#F6F5F3; 		}
+}
+

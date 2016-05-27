@@ -1,0 +1,138 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+a {
+  outline: none;
+}
+:-moz-any-link:focus {
+  outline: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/************* Common methods *************/
+
+
+
+/************* classes *************/
+
+.clear 		{ clear: both;	overflow: hidden; font-size: 1px; height: 0px;	}
+
+
+html, body {		
+	color: #555555;
+	width: 100%;
+	/*height: 100%;*/
+	margin: 0px;
+	padding: 0px;
+	/*overflow-x: hidden; */
+	background: #ffffff;
+}
+
+.tab 				{	height:110px; width: 912px; position: absolute; 	}
+.tab a#home-nav		{	width: 180px;		}
+
+
+ul  		{	list-style:none; float:left; }
+li  		{	width:110px; float:left; }
+div 		{ 	font-family: Helvetica; color: black;  }
+
+	
+	
+
+/* header */
+#header 			       	{  	width: 1000px; height: 110px; background:#DDECF3; border-bottom:1px solid #cccccc;	}
+#header .hdr_logo		{  margin-left: 60px; padding: 25px 0 0 0px; float: left; }
+#header .hdr_item	 	{  margin-left: 60px; padding: 50px 0 0 0px; float: left; }
+	
+#content-start-header						{ 	margin-left: 85px; width: 612px; 											}
+#content-start-header .trip-header    		{ 	text-align: left; font-size: 32px; letter-spacing:2px; margin-top: 25px; 	}
+
+#content-start-form				      			{ 	margin-left: 85px;width: 760px; ;									}
+
+h2 			{		border:1px solid #cccccc; margin-bottom: 30px;	 	}	
+p			{		border:1px solid #cccccc; margin-top: 30px;	 	}
+
+a {
+	text-decoration:none;
+	border-bottom: dashed 2px #9F3;
+}
+a.button {
+	border: solid 1px #000;
+	background-color: #333; 
+}
+
+#footer 										{	margin-left: 30px; margin-top: 40px; float: left; 		}
+#footer  .content-footer  					{  	margin-left: 30px; float: left; background:#F6F5F3; 	}
+

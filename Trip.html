@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<body>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>TripGiver HTML 5</title>
+	<meta name="description" content="">	
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/trip.css">
+	<script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.signalR-1.1.3.js"></script>
+	<script src="js/home/main.js"></script>
+</head>
+
+<div id="home"> 
+    <div class="container"> 
+		<header id="header">
+			<div class="hdr_logo"><a href="/"><img src="images/tg_logo.gif"></a></div>
+			<div class="hdr_item"><input type="text" class="searchBox" id="txtSearch" /></div>
+			<div class="hdr_item"><input type="button" id="btnSearch" Value="Go" /></div>
+			<div class="hdr_item">
+				<a href="#" id="btnSignIn">Trips</a> |
+				<a href="#" id="btnSignIn">Create</a> |
+				<a href="Profile.html" id="btnSignIn">Welcome, Richard</a>
+			</div>
+			<div class="clear"></div>
+		</header>
+	
+	<section id="content-trip-header">
+		<div class="trip-blurb">
+			Trip to Hawaii <img src="images/profile_2345432.gif"><span class="trip_name">By Richard D.</span>
+		</div>
+	</section>
+	
+	<section id="content-trip">
+	
+		<div class="inline funded_inline">
+			<div class="funded">	
+				<div class="funded_content funded_percent">50%</div>
+				<div class="funded_content funded_header">Funded</div>
+			</div>
+			<div>
+				<div class="funded_content funded_amount_needed">$5000 needed for trip.</div>
+				<div class="funded_content funded_amounts">$1000          $500          $100</div>
+				<div class="funded_content funded_objects">ticket         hotel         food</div>
+				<div class="funded_content funded_period_header">Funding Period</div>
+				<div class="funded_content">July 3rd, 2014 - Aug 5th, 2014.</div>
+				<div class="funded_button"><img src="images/donate_orange_min.png"></div>
+				<div class="funded_bottom"><hr>Lorem ipsum dolum sit amet, consectetur apipiscing eli<hr></div>
+			</div>
+			
+		</div>
+		
+		<div class="inline map_inline">
+			<img src="images/map.jpg">
+		</div>
+			
+		
+		<div class="vacation">
+			<img src="images/img-turtle-nostroke.jpg">		
+			
+			<div class="icons">	
+				<img src="images/fb_like.png">
+				<img src="images/twitter.png">
+				<img src="images/heart_on.png">
+			</div>
+		</div>
+	
+		<div class="trip_desc_header">
+			Lorem ipsum dolum sit amet, consectetur apipiscing elit. Lorem ipsum dolum sit amet.<br><br>		
+		</div>
+		
+		<div class="trip_desc">	
+			Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+			Lorem ipsum dolum sit amet. 
+			<br>
+			
+			<img src="images/donate_orange.png"><br><br>
+		</div>
+		
+		<div class="trip_comment_form">
+			<textarea placeholder="Make a comment!" cols="70" rows="7"></textarea>
+			<input type="button" id="btnSubmitComment" value="Submit" />
+		</div>
+		
+		<div class="trip_comments">
+			<div class="trip_comment">
+				<img src="images/profile_2345432.gif"><span class="trip_name">By Richard D.</span><br>
+				Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+				Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet.<hr>
+			</div>
+			<div class="trip_comment">
+			<img src="images/profile_2345432.gif"><span class="trip_name">By Richard D.</span><br>
+				Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+				Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet.<hr>
+			</div>
+			<div class="trip_comment">
+			<img src="images/profile_2345432.gif"><span class="trip_name">By Richard D.</span><br>
+				Lorem ipsum dolum sit amet, consectetur apipiscing elit. 
+				Lorem ipsum dolum sit amet.Lorem ipsum dolum sit amet.<hr>
+			</div>
+		
+			<div class="inline funders_inline">
+				<div class="funders_header">Donations By</div>
+					
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif"><br><br>
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif"><br><br>
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif"><br><br>
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif">
+					<img src="images/profile_2345432.gif"><br><br>
+
+				
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+	
+	<div class="clear"></div>
+	
+	<footer  id="footer">
+		<div class="content-footer">	
+			<ul>
+				<li><a href="/" id="home-nav">About</a></li>
+				<li><a href="/" id="home-nav">Team</a></li>
+				<li><a href="/" id="home-nav">Contact</a></li>
+				<li><a href="/" id="home-nav">Site Map</a></li>
+				<li><a href="/" id="home-nav">Terms</a></li>
+				<li><a href="/" id="home-nav">Privacy</a></li>
+				<li><a href="/" id="home-nav">2014 TripGiver</a></li>
+			</ul>
+			</div>
+	</footer>
+	<div class="clear"></div>
+	<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

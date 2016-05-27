@@ -1,0 +1,90 @@
+@import "common.less";
+
+	/* login */
+	#signin {
+		height: 230px;
+		width: 230px;	
+		border:1px solid @baseBlue;
+		position:absolute;
+		top: 110px;
+		left: 680px;
+		background:#ffffff;
+		display:true;
+		
+		.login_problems { text-align: left; font-size: @baseFontSize; color: #72B4FF; }
+	}
+	
+	
+	/* header */
+	#header 
+	{  
+		width: @baseWidth; 
+		height: 110px; 
+		background:@baseBlue; border-bottom:1px solid #cccccc; 
+		
+		.navigation 	{ width: @baseContainerWidth; height:110px;  }
+		.logo-container { width: @baseContainerWidth;	}
+		.logo 			
+		{ 
+			margin-left: 70px; padding: 25px 0 0 25px; float: @baseFloat; position: relative; 		
+			span 		{ color: #C27315; font-size: @baseFontSize+6; position: absolute; bottom: 0; left: 117px; 	}
+		}
+		.search-nav 	{ margin-left: 60px; padding: 50px 0 0 0px;  float: @baseFloat; 							}
+		.search_go 		{ margin-left: 10px; padding: 50px 0 0 0px;  float: @baseFloat;  							}
+		.signin 		{ margin-left: 50px; padding: 50px 0 0 0px;  float: @baseFloat; 							}
+		.signup 		{ margin-left: 10px; padding: 30px 0 0 25px; float: @baseFloat; 							}
+	}
+	
+	/* trips */
+	#content-trips
+	{
+		margin-left: 70px;
+		float: @baseFloat; 
+		
+		.vacation_header  { text-align: @baseFloat; font-size: @baseFontSize + 4px; color: #448ccb; padding: 0px 0px 0px 0px; }
+		.vacation_user    { text-align: @baseFloat; font-size: @baseFontSize + 3px; color: #959595; }
+		.vacation_desc    { text-align: @baseFloat; font-size: @baseFontSize - 2px; color: #707070; padding: 5px 2px 2px 5px; }
+		.vacation
+		{
+			margin-top: 25px; 
+			margin-right: 85px; 
+			width: 200px; 
+			height: 380px; 
+			float: @baseFloat; 
+			padding: 10px 0 0 10px; 
+			text-align: left; 
+			font-size: 10px; 
+			color: #75B4FD; 
+			border:1px solid #cccccc;
+		}
+		.funded
+			{	
+				background:#7ab8fe;
+				width: 80px; 
+				height: auto;
+				padding: 5px 2px 2px 5px; 
+				float: @baseFloat; 
+				.box-shadow(2px, #888);
+				position:relative;
+				left:160px;
+				bottom:290px;
+			}
+		 .icons
+			{	
+				width: 66px; 
+				height: auto;
+				padding: 5px 2px 2px 5px; 
+				float: @baseFloat; 
+				position:relative;
+				left:130px;
+				bottom:20px;
+			}
+			
+		.funded_percent 	{ font-size: @baseFontSize+6; color: #FFFFFF; text-align: center;  }
+		.funded_text	    { font-size: @baseFontSize - 1px; color: #FFFFFF; text-align: center; }
+		.funded_more      	{ width: 82px; height: 52px; color: #72B4FF; border:1px solid #72B4FF;  }
+		.funded_complete    { width: 82px; height: 90px; height: auto; float: @baseFloat; position:relative; left:190px; bottom:300px;	}
+	}
+	
+	#content-trips-focus { margin-left: 70px; float: @baseFloat; }
+	
